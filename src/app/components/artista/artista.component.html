@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-2">
+        <img [src]="artista.images | noimage" alt="" class="img-thumbnail img-circle">
+    </div>
+    <div class="col">
+        <h3>{{artista.name}}</h3>
+        <p>
+            <a [href]="artista.external_urls.spotify" target="_blank"></a>
+            Ir ala pagina del artista
+        </p>
+    </div>
+    <div class="col-4 text-right">
+        <button routerLink="/search" class="btn btn-outline-danger">
+            regresar
+        </button>
+    </div>
+</div>
